@@ -1,10 +1,9 @@
 .bg-index{
-  background: url("/static/img/background.jpg") no-repeat
-    fixed;
+  background: url("../img/background.jpg") no-repeat fixed;
   background-size: 100% auto;
 }
 .navbar a.nav-link {
-  color: #FFFEF6 !important;
+  color: #ea98de !important;
 }
 .bg-dark {
   background-color: #f9eded !important;
@@ -29,7 +28,7 @@
   text-decoration: none;
 }
 .ms-footer-bottom a:hover {
-  color: #fff;
+  color: #ea98de;
 }
 .img-card-200 {
   width: fit-content;
