@@ -1,16 +1,6 @@
 .bg-index{
   background: url("../img/background.jpg") no-repeat fixed;
   background-size: 100% auto;
-  text-align: center;
-}
-.center-text {
-  text-align: center;
-}
-.grid-center {
-  display: grid;
-  place-items: center;
-  height: 100vh;
-  text-align: center;
 }
 .navbar a.nav-link {
   color: #ea98de !important;
@@ -20,7 +10,6 @@
 }
 .ms-footer {
   background-color: #f9eded;
-  text-align: center;
 }
 .ms-footer p {
   color: #7F7F7F;
@@ -29,9 +18,6 @@
 .ms-footer a:hover {
   color: #6ab43e;
   text-decoration: none;
-}
-.ms-footer-bottom {
-  text-align: center;
 }
 .ms-footer-bottom span{
   font-size: 13px;
