@@ -1,9 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy&display=swap');
-:root {
-    --light-pink: #f9eded;
-    --navy-purple: #3f418d;
-    --dark-pink: #FFB6C1;
-}
 
 body {
   background: linear-gradient(to bottom right, #ffe2e2, #fd9696);
@@ -15,8 +10,13 @@ body {
   font-optical-sizing: auto;
   font-weight: 400; /* Set weight: try 100, 400, 700 */
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: "wdth" 100;
+}
+
+.bg-index {
+  background: url("../img/background.jpg") no-repeat fixed;
+  background-size: 100% auto;
+  text-align: center;
 }
 
 .center-text {
@@ -39,15 +39,15 @@ body {
 }
 
 .navbar a.nav-link {
-  color: #FFB6C1 !important;
+  color: #ea98de !important;
 }
 
 .bg-dark {
-  background-color: #f9eded !important;
+  background-color: #e1c7c7 !important;
 }
 
 .ms-footer {
-  background-color: #f9eded;
+  background-color: #e1c7c7;
   text-align: center;
 }
 
@@ -76,7 +76,7 @@ body {
 }
 
 .ms-footer-bottom a:hover {
-  color: #FFB6C1;
+  color: #ea98de;
 }
 
 .img-card-200 {
