@@ -1,30 +1,54 @@
+body {
+  background: linear-gradient(to right, #fecece, #ff9595);
+}
 .bg-index{
   background: url("../img/background.jpg") no-repeat fixed;
   background-size: 100% auto;
+  text-align: center;
+}
+.center-text {
+  text-align: center;
+}
+.flex-center {
+  display: flex;
+  align-items: center; /* Centers text vertically */
+  justify-content: center; /* Centers text horizontally */
+  height: 100vh; /* Full viewport height */
+  text-align: center;
+}
+.grid-center {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  text-align: center;
 }
 .navbar a.nav-link {
   color: #ea98de !important;
 }
 .bg-dark {
-  background-color: #f9eded !important;
+  background-color: #f8e1e1 !important;
 }
 .ms-footer {
-  background-color: #f9eded;
+  background-color: #f8e1e1; /* light pink */
+  text-align: center;
 }
 .ms-footer p {
   color: #7F7F7F;
   font-size: 13px;
 }
 .ms-footer a:hover {
-  color: #6ab43e;
+  color: #3f418d;
   text-decoration: none;
+}
+.ms-footer-bottom {
+  text-align: center;
 }
 .ms-footer-bottom span{
   font-size: 13px;
   line-height: 38px;
 }
 .ms-footer-bottom a {
-  color: #6ab43e;
+  color: #3f418d;
   text-decoration: none;
 }
 .ms-footer-bottom a:hover {
