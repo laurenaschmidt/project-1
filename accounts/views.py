@@ -5,6 +5,10 @@ from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import redirect
 
 from django.contrib.auth.decorators import login_required
+@login_required
+def logout(request):
+    auth_logout(request)
+    return redirect('home.index')
 
 def login(request):
     template_data = {}
