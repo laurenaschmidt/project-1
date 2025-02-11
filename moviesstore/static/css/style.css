@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy&display=swap');
+:root {
+    --light-pink: #f9eded;
+    --navy-purple: #3f418d;
+    --dark-pink: #FFB6C1;
+}
 
 body {
   background: linear-gradient(to bottom right, #ffe2e2, #fd9696);
@@ -34,7 +39,7 @@ body {
 }
 
 .navbar a.nav-link {
-  color: #ea98de !important;
+  color: #FFB6C1 !important;
 }
 
 .bg-dark {
@@ -71,7 +76,7 @@ body {
 }
 
 .ms-footer-bottom a:hover {
-  color: #ea98de;
+  color: #FFB6C1;
 }
 
 .img-card-200 {
