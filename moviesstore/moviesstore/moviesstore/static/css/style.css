@@ -1,8 +1,11 @@
+body {
+  background: linear-gradient(to bottom right, #ffe2e2, #fd9696);
+}
+
 .bg-index {
   background: url("../img/background.jpg") no-repeat fixed;
   background-size: 100% auto;
   text-align: center;
-  background: linear-gradient(to right, #ffb4b4, #ff758c);
 }
 
 .center-text {
@@ -38,7 +41,7 @@
 }
 
 .ms-footer p {
-  color: #7F7F7F;
+  color: #22234b;
   font-size: 13px;
 }
 
