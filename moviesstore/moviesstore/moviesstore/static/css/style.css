@@ -1,39 +1,89 @@
-.bg-index{
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy&display=swap');
+
+body {
+  background: linear-gradient(to bottom right, #ffe2e2, #fd9696);
+  font-family: 'Sour+Gummy', sans-serif;
+}
+
+.sour-gummy-text {
+  font-family: "Sour Gummy", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Set weight: try 100, 400, 700 */
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.bg-index {
   background: url("../img/background.jpg") no-repeat fixed;
   background-size: 100% auto;
+  text-align: center;
 }
+
+.center-text {
+  text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.grid-center {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
 .navbar a.nav-link {
   color: #ea98de !important;
 }
+
 .bg-dark {
-  background-color: #f9eded !important;
+  background-color: #e1c7c7 !important;
 }
+
 .ms-footer {
-  background-color: #f9eded;
+  background-color: #e1c7c7;
+  text-align: center;
 }
+
 .ms-footer p {
-  color: #7F7F7F;
+  color: #22234b;
   font-size: 13px;
 }
+
 .ms-footer a:hover {
-  color: #6ab43e;
+  color: #3f418d;
   text-decoration: none;
 }
-.ms-footer-bottom span{
+
+.ms-footer-bottom {
+  text-align: center;
+}
+
+.ms-footer-bottom span {
   font-size: 13px;
   line-height: 38px;
 }
+
 .ms-footer-bottom a {
-  color: #6ab43e;
+  color: #3f418d;
   text-decoration: none;
 }
+
 .ms-footer-bottom a:hover {
   color: #ea98de;
 }
+
 .img-card-200 {
   width: fit-content;
   max-height: 200px;
 }
+
 .img-card-400 {
   width: fit-content;
   max-height: 400px;
