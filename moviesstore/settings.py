@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 import os
 from pathlib import Path
 
+from django.core.mail import send_mail
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -25,8 +27,22 @@ SECRET_KEY = 'django-insecure-l!t9e%bdr-ptb4c^t^(k_33#)!i-tklcpidv-fk#6lb$k)%l=b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
+# TO TEST EMAIL BY SENDING IT TO DIRECTORY:
+EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
+EMAIL_FILE_PATH = BASE_DIR / 'emails'
+
+# TO ACTUALLY EMAIL USER (still debugging):
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp.gmail.com'# Use your email provider's SMTP server
+# EMAIL_PORT = 587# Common port for TLS
+# EMAIL_USE_TLS = True# Enables security
+# EMAIL_HOST_USER = 'avajoannwilliams@gmail.com'# Your email address
+# EMAIL_HOST_PASSWORD = 'your_app_password'# App password or actual password (not recommended)
+# DEFAULT_FROM_EMAIL = 'your_email@gmail.com'# Default sender email
+
+LOGIN_URL = 'accounts.login'
 
 # Application definition
 

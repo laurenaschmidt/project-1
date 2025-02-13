@@ -15,6 +15,7 @@ def logout(request):
 def login(request):
     template_data = {}
     template_data['title'] = 'Login'
+    max_attempts = 3
     if request.method == 'GET':
         return render(request, 'accounts/login.html',
             {'template_data': template_data})
@@ -24,10 +25,20 @@ def login(request):
             username = request.POST['username'],
             password = request.POST['password']
         )
+
+        if 'failed_attempts' not in request.session:
+            request.session['failed_attempts'] = 0
+        
         if user is None:
-            template_data['error'] = 'The username or password is incorrect.'
+            request.session['failed_attempts'] += 1
+            if request.session['failed_attempts'] >= max_attempts:
+                request.session['failed_attempts'] = 0
+                return redirect('/accounts/password_reset/')
+
+            template_data['error'] = 'The username or password is incorrect. You have ' + str(max_attempts - request.session['failed_attempts']) + ' more attempt(s) until you will be prompted to reset password.'
             return render(request, 'accounts/login.html',
                 {'template_data': template_data})
+            
         else:
             auth_login(request, user)
             return redirect('home.index')
