@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy&display=swap');
 
+.masthead {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Centers horizontally */
+  justify-content: center; /* Centers vertically */
+  height: 200px; /* Adjust height based on your banner */
+  text-align: center;
+}
+
+.bg-index {
+  background: linear-gradient(to bottom right, #ffe2e2, #fd9696);
+  width: 100%;
+}
+
+.container {
+  max-width: 800px; /* Ensures content is centered inside */
+}
+
 body {
   background: linear-gradient(to bottom right, #ffe2e2, #fd9696);
   font-family: 'Sour+Gummy', sans-serif;
@@ -39,15 +57,15 @@ body {
 }
 
 .navbar a.nav-link {
-  color: #ea98de !important;
+  color: #3f418d !important;
 }
 
 .bg-dark {
-  background-color: #e1c7c7 !important;
+  background-color: #fbb9b9 !important;
 }
 
 .ms-footer {
-  background-color: #e1c7c7;
+  background-color: #ff9393;
   text-align: center;
 }
 
