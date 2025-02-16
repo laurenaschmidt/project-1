@@ -9,6 +9,14 @@
   text-align: center;
 }
 
+.success-message {
+  color: green;
+}
+
+.error-message {
+  color: red;
+}
+
 .bg-index {
   background: linear-gradient(to bottom right, #ffe2e2, #fd9696);
   width: 100%;

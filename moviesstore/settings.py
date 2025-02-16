@@ -30,17 +30,22 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 # TO TEST EMAIL BY SENDING IT TO DIRECTORY:
-EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
-EMAIL_FILE_PATH = BASE_DIR / 'emails'
+# EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
+# EMAIL_FILE_PATH = BASE_DIR / 'emails'
 
 # TO ACTUALLY EMAIL USER (still debugging):
+# CRISPY_TEMPLATE_PACK = 'bootstrap4'
 # EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-# EMAIL_HOST = 'smtp.gmail.com'# Use your email provider's SMTP server
+# EMAIL_HOST = 'smtp.office365.com'# Use your email provider's SMTP server
 # EMAIL_PORT = 587# Common port for TLS
 # EMAIL_USE_TLS = True# Enables security
-# EMAIL_HOST_USER = 'avajoannwilliams@gmail.com'# Your email address
-# EMAIL_HOST_PASSWORD = 'your_app_password'# App password or actual password (not recommended)
-# DEFAULT_FROM_EMAIL = 'your_email@gmail.com'# Default sender email
+# EMAIL_USE_SSL = False
+# EMAIL_HOST_USER = 'your-email@example.com'
+# EMAIL_HOST_PASSWORD = ''
+# EMAIL_TIMEOUT = 30
+# EMAIL_HOST_USER = os.environ.get('EMAIL_print("settings email user: " + str(os.environ.get('EMAIL_USER')))
+# EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS')
+# DEFAULT_FROM_EMAIL = 'avajoannwilliams@gmail.com'# Default sender email
 
 LOGIN_URL = 'accounts.login'
 
