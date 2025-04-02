@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy&display=swap');
+
+.masthead {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Centers horizontally */
+  justify-content: center; /* Centers vertically */
+  height: 200px; /* Adjust height based on your banner */
+  text-align: center;
+}
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.success-message {
+  color: green;
+}
+
+.error-message {
+  color: red;
+}
+
+.bg-index {
+  background: linear-gradient(to bottom right, #ffe2e2, #fd9696);
+  width: 100%;
+}
+
+.container {
+  max-width: 800px; /* Ensures content is centered inside */
+}
+
+body {
+  background: linear-gradient(to bottom right, #ffe2e2, #fd9696);
+  font-family: 'Sour+Gummy', sans-serif;
+}
+
+.sour-gummy-text {
+  font-family: "Sour Gummy", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Set weight: try 100, 400, 700 */
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.bg-index {
+  background: url("../img/background.jpg") no-repeat fixed;
+  background-size: 100% auto;
+  text-align: center;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.grid-center {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.navbar a.nav-link {
+  color: #3f418d !important;
+}
+
+.bg-dark {
+  background-color: #fbb9b9 !important;
+}
+
+.ms-footer {
+  background-color: #ff9393;
+  text-align: center;
+}
+
+.ms-footer p {
+  color: #22234b;
+  font-size: 13px;
+}
+
+.ms-footer a:hover {
+  color: #3f418d;
+  text-decoration: none;
+}
+
+.ms-footer-bottom {
+  text-align: center;
+}
+
+.ms-footer-bottom span {
+  font-size: 13px;
+  line-height: 38px;
+}
+
+.ms-footer-bottom a {
+  color: #3f418d;
+  text-decoration: none;
+}
+
+.ms-footer-bottom a:hover {
+  color: #ea98de;
+}
+
+.img-card-200 {
+  width: fit-content;
+  max-height: 200px;
+}
+
+.img-card-400 {
+  width: fit-content;
+  max-height: 400px;
+}

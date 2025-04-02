@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<div class="p-3">
+  <div class="container">
+    <div class="row mt-3">
+      <div class="col-md-6 mx-auto mb-3">
+        <h2>About</h2>
+        <hr />
+        <p>
+           At Movies Express, we’re not just another movie platform
+           —we’re your express train to cinematic adventure!
+           Whether you’re riding first-class with the latest blockbusters,
+           taking the scenic route with timeless classics,
+           or making a surprise stop at hidden gems,
+           we’ve got the perfect film ticket for you.
+           Hop on board and browse our vast digital library,
+           covering every genre from action-packed thrillers to heartwarming dramas.
+           With just a few clicks, you can rent or purchase your favorite films
+           and watch them instantly in stunning high-definition
+           —no delays, no detours!
+        </p>
+        <p>
+          With Movies Express, you have the flexibility to watch anywhere
+          —whether you’re at the station, on the go, or cozied up in your home theater carriage.
+          Our intuitive search engine is like your personal conductor
+          guiding you to your next favorite film faster than a bullet train!
+          So, what are you waiting for? Take the express route to your next movie night
+          and let Movies Express keep your cinematic journey on track!
+        </p>
+      </div>
+      <div class="col-md-6 mx-auto mb-3 text-center">
+        <img src="{% static 'img/about.jpg' %}"
+             class="responsive-img"
+             alt="about" />
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

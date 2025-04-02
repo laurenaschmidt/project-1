@@ -1,0 +1,26 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: Password reset on 127.0.0.1:8000
+From: webmaster@localhost
+To: avajoannwilliams@gmail.com
+Date: Thu, 13 Feb 2025 18:43:56 -0000
+Message-ID: 
+ <173947223646.2873.14828653968291047947@lawn-128-61-52-52.lawn.gatech.edu>
+
+
+You're receiving this email because you requested a password reset for your user account at 127.0.0.1:8000.
+
+Please go to the following page and choose a new password:
+
+http://127.0.0.1:8000/accounts/reset/Mw/cl60t8-4c0c3cfe7f49afa40ad420ed1b9659e4/
+
+Your username, in case you’ve forgotten: avawilliams
+
+Thanks for using our site!
+
+The 127.0.0.1:8000 team
+
+
+
+-------------------------------------------------------------------------------
