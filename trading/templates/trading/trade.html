@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PokeTrade - Trade</title>
+</head>
+<body>
+    <h1>Trade Center</h1>
+    <h2>Your Trades</h2>
+    <ul>
+        {% for trade in user_trades %}
+            <li>{{ trade.initiator.username }} offered {{ trade.pokemon.name }} to {{ trade.recipient.username }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

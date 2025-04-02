@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PokeTrade - Notifications</title>
+</head>
+<body>
+    <h1>Your Notifications</h1>
+    <ul>
+        {% for notification in user_notifications %}
+            <li>{{ notification.message }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

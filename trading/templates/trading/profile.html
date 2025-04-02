@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ user_profile.user.username }}'s Profile</title>
+    <link rel="stylesheet" href="{% static 'trading/css/profile.css' %}">
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="{% if user_profile.avatar %}{{ user_profile.avatar.url }}{% else %}{% static 'trading/img/avatar.png' %}{% endif %}"
+     alt="Avatar" class="avatar" />
+            <div class="profile-info">
+                <div class="username">{{ user_profile.user.username }}'s Profile</div>
+                <p class="bio"><strong>Bio:</strong> {{ user_profile.bio }}</p>
+            </div>
+        </div>
+
+        <h2>Your Trades:</h2>
+        <ul class="trades-list">
+            {% for trade in user_trades %}
+                <li>
+                    {% if trade.sender == user_profile %}
+                        Trade with {{ trade.receiver.user.username }} – Status: {{ trade.status }}
+                    {% else %}
+                        Trade with {{ trade.sender.user.username }} – Status: {{ trade.status }}
+                    {% endif %}
+                </li>
+            {% empty %}
+                <li>No trades yet.</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

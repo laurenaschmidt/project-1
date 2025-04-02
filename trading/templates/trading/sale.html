@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PokeTrade - Marketplace</title>
+</head>
+<body>
+    <h1>Pokémon Marketplace</h1>
+    <ul>
+        {% for sale in pokemons_for_sale %}
+            <li>{{ sale.pokemon.name }} - Seller: {{ sale.seller.username }} - Price: {{ sale.price }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
